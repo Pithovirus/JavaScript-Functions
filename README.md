@@ -25,7 +25,7 @@ This repo demonstrates how JavaScript can interact with HTML and CSS to create *
 |-- README.md
 
 ## 🌐 Live Demo
-Deployed with **GitHub Pages** 👉 [https://Pithovirus.github.io/javascript-functions](https://username.github.io/javascript-functions)
+Deployed with **GitHub Pages** 👉 https://pithovirus.github.io/JavaScript-Functions/
 
 ## 📜 License
 This project is open-source under the MIT License.
