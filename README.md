@@ -15,4 +15,16 @@ This repo demonstrates how JavaScript can interact with HTML and CSS to create *
 - **Vanilla JavaScript**
 
 ## 📂 Project Structure
+/ (root)
+│-- index.html # Main HTML page
+│-- script.js # JavaScript functions
+│-- style.css # Custom styles (if any)
+│-- /images # Image assets
+│-- picture3.jpg
+│-- grain.png
 
+## 🌐 Live Demo
+Deployed with **GitHub Pages** 👉 [https://Pithovirus.github.io/javascript-functions](https://username.github.io/javascript-functions)
+
+## 📜 License
+This project is open-source under the MIT License.
