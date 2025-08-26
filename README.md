@@ -16,8 +16,8 @@ This repo demonstrates how JavaScript can interact with HTML and CSS to create *
 
 ## 📂 Project Structure
 / (root)
-│-- index.html # Main HTML page
-│-- script.js # JavaScript functions
+│-- examples.html # Main HTML page
+│-- jexamples.js # JavaScript functions
 │
 └── /images # Image assets
 │-- picture3.jpg
