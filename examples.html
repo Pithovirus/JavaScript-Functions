@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>JavaScript Functions</title>
+  </head>
+  <body
+    id="background-layer"
+    class="min-h-screen bg-center bg-cover text-gray-900 p-6 font-sans"
+    style="
+      background-image: url('/images/grain2.png'), url('/images/picture3.jpg');
+      background-size: cover, cover;
+      background-repeat: repeat, no-repeat;
+      background-blend-mode: overlay;
+    "
+  >
+    <div
+      class="max-w-3xl mx-auto bg-slate-900/80 backdrop-blur-sm shadow-[0_0_80px_20px_rgba(0,0,0,0.5),_0_0_15px_5px_rgba(0,0,0,0.6)] rounded-2xl p-6 space-y-6"
+    >
+      <h1 class="text-3xl font-bold text-center text-blue-500">
+        JavaScript Programming Lab
+      </h1>
+      <p class="text-center text-sm text-amber-500 font-bold">
+        Instructor: Caleb | Date: 08/22/2025
+      </p>
+
+      <!-- Alert -->
+      <section>
+        <h2 class="text-xl font-semibold mb-2">
+          <div class="flex flex-wrap gap-3 justify-center">
+            <button
+              onclick="showWelcome()"
+              class="btn flex items-center justify-center border-2 border-amber-600 text-red-600 rounded-lg p-2 hover:bg-amber-300 hover:text-white transition bg-white"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/3891/3891140.png"
+                alt="Hello"
+                class="w-10 h-10"
+              />
+            </button>
+            <button
+              onclick="goodMorning()"
+              class="btn flex items-center justify-center border-2 border-amber-600 text-red-600 rounded-lg p-2 hover:bg-amber-300 hover:text-white transition bg-white"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/5257/5257380.png"
+                alt="Good Morning"
+                class="w-10 h-10"
+              />
+            </button>
+            <button
+              onclick="goodAfternoon()"
+              class="btn flex items-center justify-center border-2 border-amber-600 text-red-600 rounded-lg p-2 hover:bg-amber-300 hover:text-white transition bg-white"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/11175/11175681.png"
+                alt="Good Afternoon"
+                class="w-10 h-10"
+              />
+            </button>
+            <button
+              onclick="goodNight()"
+              class="btn flex items-center justify-center border-2 border-amber-600 text-red-600 rounded-lg p-2 hover:bg-amber-300 hover:text-white transition bg-white"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/5257/5257134.png"
+                alt="Good Night"
+                class="w-10 h-10"
+              />
+            </button>
+            <button
+              onclick="specialMessage()"
+              class="btn flex items-center justify-center border-2 border-amber-600 text-red-600 rounded-lg p-2 hover:bg-amber-300 hover:text-white transition bg-white"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/13819/13819701.png"
+                alt="Special"
+                class="w-10 h-10"
+              />
+            </button>
+          </div>
+        </h2>
+      </section>
+      <!-- User Info -->
+      <section>
+        <h2 class="text-amber-500 text-xl font-semibold mb-3">User Info</h2>
+
+        <div
+          class="grid grid-cols-2 gap-y-3 gap-x-8 items-center w-[20rem] text-amber-500"
+        >
+          <!-- Row 1 -->
+          <button
+            onclick="getName()"
+            class="px-3 py-2 rounded-lg border border-amber-200 hover:bg-gray-100/25"
+          >
+            Get My Name
+          </button>
+          <p id="displayName" class="text-blue-500 text-1xl font-semibold"></p>
+
+          <!-- Row 2 -->
+          <button
+            onclick="calculateAge()"
+            class="px-3 py-2 rounded border border-amber-200 hover:bg-gray-100/25"
+          >
+            Calculate My Age
+          </button>
+          <p id="ageResult" class="text-green-700 font-medium"></p>
+
+          <!-- Row 3 -->
+          <button
+            onclick="getProfile()"
+            class="px-3 py-2 rounded border border-amber-200 hover:bg-gray-100/25"
+          >
+            Get My Profile
+          </button>
+          <p id="profile" class="text-purple-700 font-medium w-[30rem]"></p>
+        </div>
+      </section>
+
+      <!-- Ask Permission -->
+      <section class="text-amber-500">
+        <h2 class="text-xl font-semibold mb-2">
+          Ask Permission: Yes/No Decisions
+        </h2>
+        <button onclick="askPermission()" class="btn">Ask Permission</button>
+      </section>
+      <!-- Change/Reset Text -->
+      <section class="text-amber-500">
+        <h2 class="text-xl font-semibold mb-2">
+          Change/Reset Text: Interactive Elements
+        </h2>
+        <p
+          id="text"
+          class="mb-2 container bg-slate-700 w-32 text-center shadow-lg"
+        >
+          This is my text
+        </p>
+        <div class="flex gap-3">
+          <button onclick="changeText()" class="btn">Change Text</button>
+          <button onclick="resetText()" class="btn">Reset Text</button>
+        </div>
+      </section>
+      <!-- Mini Calculator -->
+      <section class="text-amber-500">
+        <h2 class="text-xl font-semibold mb-2">Mini Calculator</h2>
+        <button onclick="simpleCalc()" class="btn">Start Calculator</button>
+        <p id="calcResult" class="text-red-600 font-bold"></p>
+      </section>
+    </div>
+  </body>
+  <script src="jexamples.js"></script>
+</html>
